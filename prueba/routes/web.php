@@ -5,15 +5,19 @@ use App\Http\Controllers\PruebasmedicasController;
 use App\Http\Controllers\ResultadosController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('layout/plantilla2');
+});
+
 //Pacientes
 
-Route::get('/', [PacientesController::class, 'index'])->name('pacientes.index');
-Route::get('/create', [PacientesController::class, 'create'])->name('pacientes.create');
-Route::post('/store', [PacientesController::class, 'store'])->name('pacientes.store');
-Route::get('/edit/{id_paciente}', [PacientesController::class, 'edit'])->name('pacientes.edit');
-Route::put('/update/{id_paciente}', [PacientesController::class, 'update'])->name('pacientes.update');
-Route::get('/show/{id_paciente}', [PacientesController::class, 'show'])->name('pacientes.show');
-Route::delete('/destroy/{id_paciente}', [PacientesController::class, 'destroy'])->name('pacientes.destroy');
+Route::get('/1', [PacientesController::class, 'index'])->name('pacientes.index');
+Route::get('/create1', [PacientesController::class, 'create'])->name('pacientes.create');
+Route::post('/store1', [PacientesController::class, 'store'])->name('pacientes.store');
+Route::get('/edit1/{id_paciente}', [PacientesController::class, 'edit'])->name('pacientes.edit');
+Route::put('/update1/{id_paciente}', [PacientesController::class, 'update'])->name('pacientes.update');
+Route::get('/show1/{id_paciente}', [PacientesController::class, 'show'])->name('pacientes.show');
+Route::delete('/destroy1/{id_paciente}', [PacientesController::class, 'destroy'])->name('pacientes.destroy');
 
 //Pruebas Medicas
 

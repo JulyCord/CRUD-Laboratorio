@@ -4,7 +4,7 @@
 
 @section('contenido')
 <div class="card">
-    <h5 class="card-header">CRUD Laravel</h5>
+    <h5 class="card-header">Laboratorios Clínicos</h5>
     <div class="card-body">
         <div class="row">
             <div class="col-sm-12">
@@ -63,7 +63,9 @@
                 <hr>
                 
             </div>
-          
+            <a href="{{ url('/') }}" class="btn btn-info" >
+                    <span class="fas fa-undo-alt"></span> Regresar
+            </a>
         </p>
     </div>
 </div>

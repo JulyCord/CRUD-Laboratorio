@@ -24,7 +24,7 @@
                     <span class="fas fa-undo-alt"></span> Regresar
                 </a>
                 <button class="btn btn-warning">
-                    <span class="fas fa-user-plus"></span> Agregar
+                    <span class="fas fa-user-plus"></span> Actualizar
                 </button>
                 
             </form>

@@ -19,7 +19,7 @@
         </div>
         <h5 class="card-title text-center">Pacientes</h5>
         <p>
-            <a href="{{ route("pacientes.create") }}" class="btn btn-primary">
+            <a href="{{ route("pacientes.create") }}" class="btn btn-primary" method="GET">
                 <span class="fas fa-user-plus"></span> Agregar nuevo paciente
             </a>
         </p>
@@ -63,7 +63,9 @@
                 <hr>
                 
             </div>
-          
+            <a href="{{ url('/') }}" class="btn btn-info" >
+                    <span class="fas fa-undo-alt"></span> Regresar
+            </a>
         </p>
     </div>
 </div>
